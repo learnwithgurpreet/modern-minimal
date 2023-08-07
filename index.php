@@ -4,9 +4,9 @@
   }
   get_header();
 ?>
-<h1 class="max-w-7xl mx-auto w-full px-5"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
+<h1 class="max-w-7xl mx-auto w-full px-5 mb-6"><?php echo get_the_title( get_option('page_for_posts', true) ); ?></h1>
 <section class="items-center mb-6 flex flex-wrap gap-5 lg:flex-nowrap max-w-7xl mx-auto w-full px-5">
-  <ul class="mt-11 fade transition-all duration-200 motion-reduce:transition-none">
+  <ul class="fade transition-all duration-200 motion-reduce:transition-none">
     <?php
       if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <li class="flex-col relative mb-6">

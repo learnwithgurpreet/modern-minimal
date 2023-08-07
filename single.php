@@ -17,7 +17,7 @@
       }
     ?>
   </div>
-  <article>
+  <article class="prose lg:prose-lg max-w-none dark:prose-invert">
     <?php the_content(); ?>
   </article>
 </section>

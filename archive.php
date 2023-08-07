@@ -4,7 +4,7 @@
   }
   get_header();
 ?>
-<h1 class="max-w-7xl mx-auto w-full px-5"><?php single_cat_title(); ?></h1>
+<h1 class="max-w-7xl mx-auto w-full px-5 mb-6"><?php single_cat_title(); ?></h1>
 <section class="items-center mb-6 flex flex-wrap gap-5 lg:flex-nowrap max-w-7xl mx-auto w-full px-5">
   <ul class="mt-11 fade transition-all duration-200 motion-reduce:transition-none">
     <?php

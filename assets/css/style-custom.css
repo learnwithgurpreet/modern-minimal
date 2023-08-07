@@ -37,20 +37,6 @@ a {
   @apply right-1;
 }
 
-blockquote {
-  @apply p-4 my-4 border-l-4 border-gray-600 bg-gray-50 dark:border-gray-700 dark:bg-gray-800;
-}
-
-article ol,
-article ul {
-  @apply mt-6;
-}
-
-article ol li,
-article ul li {
-  @apply my-2;
-}
-
 article ul li {
   @apply list-disc ml-5;
 }
@@ -75,21 +61,10 @@ article {
   @apply mb-5;
 }
 
-article pre,
-p,
-article p {
-  @apply overflow-hidden break-words pt-4 lg:pt-6;
-}
-article blockquote p {
-  @apply italic font-medium pt-3;
-}
 article h2[id],
 article h3[id],
 article h4[id] {
   @apply scroll-mt-4 relative transition-colors duration-200 outline-none motion-reduce:transition-none;
-}
-:not(pre)>code{
-  @apply text-sm text-teal-400 bg-gray-800 px-2 py-1;
 }
 
 .separator:not(:last-child) {

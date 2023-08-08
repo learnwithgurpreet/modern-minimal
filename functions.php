@@ -30,8 +30,8 @@ add_action("init", "modern_minimal_menus");
 
 
 function modern_minimal_load_stylesheets() {
-	wp_enqueue_style('modern-minimal-style', get_stylesheet_uri(), array(), MM_VERSION, "all");
-	wp_enqueue_style('modern-minimal-style-custom', get_template_directory_uri() . "/assets/css/minified/style-custom.css", array("modern-minimal-style"), MM_VERSION, "all");
+	// wp_enqueue_style('modern-minimal-style', get_stylesheet_uri(), array(), MM_VERSION, "all");
+	wp_enqueue_style('modern-minimal-style-custom', get_template_directory_uri() . "/assets/css/minified/style-custom.css", array(), MM_VERSION, "all");
 }
 add_action("wp_enqueue_scripts", "modern_minimal_load_stylesheets");
 

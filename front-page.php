@@ -18,9 +18,10 @@
           'post_status' => 'publish' // Show only the published posts
         ));
         foreach( $recent_posts as $post_item ) {
+          $date = date('M d, Y', strtotime($post_item['post_date']));
       ?>
         <li class="transition-all motion-reduce:transition-none duration-200 border border-gray-600 dark:border-gray-700 flex flex-col p-4 relative rounded-md bg-gray-100 hover:scale-105 dark:bg-gray-800">
-          <time datetime="<?php echo get_the_date('c'); ?>" class="slash text-sm"><?php echo get_the_date(); ?></time>
+          <time datetime="<?php echo $post_item['post_date']; ?>" class="slash text-sm"><?php echo $date; ?></time>
           <h2 class="font-semibold">
             <a href="<?php echo get_permalink($post_item['ID']) ?>" class="no-underline after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0"><?php echo $post_item['post_title'] ?></a>
           </h2>

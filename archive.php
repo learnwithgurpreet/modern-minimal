@@ -10,7 +10,8 @@
     <?php
       if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <li class="flex-col relative mb-6">
-          <time datetime="<?php echo get_the_date('c'); ?>" class="slash text-sm"><?php echo get_the_date(); ?></time>
+          <?php $date = date('M d, Y', strtotime(get_the_date('c'))); ?>
+          <time datetime="<?php echo get_the_date('c'); ?>" class="slash text-sm"><?php echo $date; ?></time>
           <h2 class="mt-1">
             <a href="<?php the_permalink(); ?>" class="after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0"><?php the_title(); ?></a>
           </h2>
